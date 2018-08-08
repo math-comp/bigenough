@@ -14,5 +14,5 @@ If you already have OPAM installed:
 
 ```
 opam repo add coq-released https://coq.inria.fr/opam/released
-opam install coq-bigenough
+opam install coq-mathcomp-bigenough
 ```
