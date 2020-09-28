@@ -1,4 +1,4 @@
-A small library to do epsilon - N reasonning.
+A small library to do epsilon - N reasoning.
 
 The repository contains a package to reasoning with big enough objects
 (mostly natural numbers). This repository is essentially for archiving

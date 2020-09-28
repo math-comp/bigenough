@@ -5,7 +5,7 @@ From mathcomp
 Require Import ssrfun ssrbool eqtype ssrnat seq choice fintype.
 
 (****************************************************************************)
-(* This is a small library to do epsilon - N reasonning.                    *)
+(* This is a small library to do epsilon - N reasoning.                     *)
 (* In order to use it, one only has to know the following tactics:          *)
 (*                                                                          *)
 (*      pose_big_enough i == pose a big enough natural number i             *)
