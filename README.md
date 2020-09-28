@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/math-comp/bigenough.svg?branch=master)](https://travis-ci.org/math-comp/bigenough)
 
-# A small library to do epsilon - N reasonning.
+# A small library to do epsilon - N reasoning.
 
 The repository contains a package to reasoning with big enough objects (mostly natural numbers).
 
