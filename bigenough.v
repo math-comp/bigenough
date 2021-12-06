@@ -84,16 +84,16 @@ Canonical big_enough_nat := BigRelOf big_rel_leq_class.
 Definition closed T (i : T) := {j : T | j = i}.
 Ltac close :=  match goal with
                  | |- context [closed ?i] =>
-                   instantiate (1 := [::]) in (Value of i); exists i
+                   instantiate (1 := [::]) in (value of i); exists i
                end.
 
 Ltac pose_big_enough i :=
   evar (i : nat); suff : closed i; first do
-    [move=> _; instantiate (1 := bigger_than leq _) in (Value of i)].
+    [move=> _; instantiate (1 := bigger_than leq _) in (value of i)].
 
 Ltac pose_big_modulus m F :=
   evar (m : F -> nat); suff : closed m; first do
-    [move=> _; instantiate (1 := (fun e => bigger_than leq _)) in (Value of m)].
+    [move=> _; instantiate (1 := (fun e => bigger_than leq _)) in (value of m)].
 
 Ltac exists_big_modulus m F := pose_big_modulus m F; first exists m.
 
