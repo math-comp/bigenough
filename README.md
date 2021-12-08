@@ -23,7 +23,7 @@ library.
 - Author(s):
   - Cyril Cohen
 - License: [CeCILL-B](LICENSE)
-- Compatible Coq versions: 8.8 or later
+- Compatible Coq versions: 8.10 or later
 - Additional dependencies:
   - [MathComp ssreflect](https://math-comp.github.io) 1.6 or later
 - Coq namespace: `mathcomp.bigenough`

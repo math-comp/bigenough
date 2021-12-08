@@ -17,8 +17,6 @@ jobs:
     strategy:
       matrix:
         image:
-          - 'coqorg/coq:8.8'
-          - 'coqorg/coq:8.9'
           - 'coqorg/coq:8.10'
           - 'coqorg/coq:8.11'
           - 'coqorg/coq:8.12'
