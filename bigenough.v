@@ -101,7 +101,6 @@ Ltac olddone :=
    trivial; hnf; intros; solve
    [ do ![solve [trivial | apply: sym_equal; trivial]
          | discriminate | contradiction | split]
-   | case not_locked_false_eq_true; assumption
    | match goal with H : ~ _ |- _ => solve [case H; trivial] end].
 
 Ltac big_enough :=
