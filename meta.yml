@@ -42,7 +42,7 @@ dependencies:
     name: coq-mathcomp-ssreflect
     version: '{>= "1.6"}'
   description: |-
-    [MathComp ssreflect](https://math-comp.github.io) 1.6 or later
+    [MathComp boot](https://math-comp.github.io) 1.6 or later (MathComp ssreflect for versions <= 2.4.0)
 
 tested_coq_opam_versions:
 - version: '8.10'
@@ -67,5 +67,5 @@ documentation: |-
   will be subsumed by the [near tactics](https://github.com/math-comp/analysis/blob/9bfd5a1971c6989f51d9c44341bb71b2fd5e3c76/topology.v#L93).
 
   The formalization is based on the [Mathematical Components](https://github.com/math-comp/math-comp) library for the [Coq](https://coq.inria.fr) proof assistant,
-  although it requires only the ssreflect package.
+  although it requires only the boot package.
 ---
