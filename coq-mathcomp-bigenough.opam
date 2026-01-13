@@ -1,6 +1,3 @@
-# This file was generated from `meta.yml`, please do not edit manually.
-# Follow the instructions on https://github.com/coq-community/templates to regenerate.
-
 opam-version: "2.0"
 maintainer: "Cyril Cohen <cyril.cohen@inria.fr>"
 version: "dev"
@@ -10,22 +7,7 @@ dev-repo: "git+https://github.com/math-comp/bigenough.git"
 bug-reports: "https://github.com/math-comp/bigenough/issues"
 license: "CeCILL-B"
 
-synopsis: "A small library to do epsilon - N reasoning"
-description: """
-The package contains a package to reasoning with big enough objects
-(mostly natural numbers). This package is essentially for backward
-compatibility purposes as `bigenough` will be subsumed by the near
-tactics. The formalization is based on the Mathematical Components
-library."""
-
-build: [make "-j%{jobs}%"]
-install: [make "install"]
-depends: [
-  "coq" {(>= "8.10" & < "9.1~") | (= "dev")}
-  ("coq-mathcomp-ssreflect" {>= "1.6" & <= "2.4"}
-  |"coq-mathcomp-boot" {>= "2.5"})
-]
-
+depends: [ "rocq-mathcomp-bigenough" { = version } ]
 tags: [
   "keyword:bigenough"
   "keyword:asymptotic reasonning"
@@ -36,3 +18,5 @@ tags: [
 authors: [
   "Cyril Cohen"
 ]
+
+synopsis: "Compatibility package for rocq-mathcomp-bigenough"
