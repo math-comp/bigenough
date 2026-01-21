@@ -6,9 +6,9 @@
 # pre-makefile::, this-clean:: and __always__:: may be extended      #
 # Additionally, the following variables may be customized:           #
 SUBDIRS?=
-COQBIN?=$(dir $(shell which coqtop))
-COQMAKEFILE?=$(COQBIN)coq_makefile
-COQDEP?=$(COQBIN)coqdep
+COQBIN?=$(dir $(shell command -v coqtop || command -v rocq))
+COQMAKEFILE?=$(shell command -v coq_makefile || echo "$(COQBIN)rocq makefile")
+COQDEP?=$(shell command -v coqdep || echo "$(COQBIN)rocq dep")
 COQPROJECT?=_CoqProject
 COQMAKEOPTIONS?=
 COQMAKEFILEOPTIONS?=
@@ -67,7 +67,7 @@ install: __always__ Makefile.coq
 COQFILES := $(shell grep '.v$$' $(COQPROJECT))
 
 count:
-	@coqwc $(COQFILES) | tail -1 | \
+	@rocq wc $(COQFILES) | tail -1 | \
 	  awk '{printf ("%d (spec=%d+proof=%d)\n", $$1+$$2, $$1, $$2)}'
 # Additionally cleaning backup (*~) files ----------------------------
 this-distclean::

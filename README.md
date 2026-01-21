@@ -25,7 +25,7 @@ library.
 - License: [CeCILL-B](LICENSE)
 - Compatible Coq versions: 8.10 or later
 - Additional dependencies:
-  - [MathComp ssreflect](https://math-comp.github.io) 1.6 or later
+  - [MathComp boot](https://math-comp.github.io) 1.6 or later (MathComp ssreflect for versions <= 2.4.0)
 - Coq namespace: `mathcomp.bigenough`
 - Related publication(s): none
 
