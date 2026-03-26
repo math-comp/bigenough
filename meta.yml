@@ -1,7 +1,7 @@
 ---
 fullname: bigenough
 shortname: bigenough
-opam_name: coq-mathcomp-bigenough
+opam_name: rocq-mathcomp-bigenough
 organization: math-comp
 community: false
 action: true
